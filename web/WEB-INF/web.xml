@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>Process</servlet-name>
+        <servlet-class>ProjektMPKWeb.ProcessRequest</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Drivers</servlet-name>
+        <servlet-class>ProjektMPKWeb.DriversRequest</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Buses</servlet-name>
+        <servlet-class>ProjektMPKWeb.BusesRequest</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Trams</servlet-name>
+        <servlet-class>ProjektMPKWeb.TramsRequest</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Process</servlet-name>
+        <url-pattern>/Process</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Drivers</servlet-name>
+        <url-pattern>/Drivers</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Buses</servlet-name>
+        <url-pattern>/Buses</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Trams</servlet-name>
+        <url-pattern>/Trams</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
